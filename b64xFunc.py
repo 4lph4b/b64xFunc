@@ -98,6 +98,6 @@ for line in ps1.splitlines():
 # Any remaining raw commands?
 if rawCommands != '':
 	# print Powershell compatible base64 string
-	encodedOutput = base64.b64encode(bytes(rawCommands, 'utf-8'))
+	encodedOutput = base64.b64encode(bytes(rawCommands, 'utf-8')).decode()
 	print("iex ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String(\"%s\")))" % encodedOutput)
 	print("")
